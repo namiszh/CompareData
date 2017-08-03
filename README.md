@@ -5,11 +5,12 @@
 This is specialized tool to check whether the records of an excel file are correct or not. The excel file has two columns: Name and ID NO. Also another excel file that contains massive correct data should be provided.
 
 **Why**
+
 My cousin-in-law needs to deal with massive records in her work. Doing that manually is impossible. So I write this tool to help her.
 
 **Dependencies**
 
-* Python
+* [Python](https://www.python.org/)
 * [Click](http://click.pocoo.org/)
 * [OpenPyXL](https://pypi.python.org/pypi/openpyxl)
 

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import openpyxl
 from openpyxl.styles import PatternFill
 import click
@@ -7,7 +9,7 @@ import os.path
 def ReadExcelData(file_name):
     print('Reading Data from', file_name, '...')
     d = {}  # id to name map
-    d1 = {}  # name to id map
+    d1 = {}  # name to id multiple map, 
     wb = openpyxl.load_workbook(file_name, data_only=True) # data_only flag will return the value not the formula
     for ws in wb.worksheets:
         for x in range(2, ws.max_row + 1):  # start from 2 to skip the title
